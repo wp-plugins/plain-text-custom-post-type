@@ -2,7 +2,7 @@
 /*
 Plugin Name:    Plain Text Custom Post Type 
 Plugin URI:     http://www.nutt.net/tag/plain-text-cpt/
-Version:        0.1
+Version:        0.2
 Author:         Ryan Nutt   
 Author URI:     http://www.nutt.net
 License:        GPL2
@@ -189,6 +189,8 @@ class Plain_Text_CPT {
             }
             
             header('Last-Modified: '.date('r', strtotime($post->post_modified))); 
+            
+            remove_action('shutdown', 'stats_footer', 101); 
             
             // Needs to be unfiltered, so can't use $content
             die(get_the_content());             

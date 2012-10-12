@@ -4,7 +4,7 @@ Donate link: http://www.nutt.net/donate/
 Tags: cpt, post, text, css, javascript
 Requires at least: 3.0
 Tested up to: 3.4
-Stable tag: 0.1
+Stable tag: 0.2
 License: GPLv2
 
 Adds a custom post type for plain text files that can be used for JavaScript or CSS.
@@ -70,10 +70,16 @@ around the WordPress forums occasionally, but my site would be faster.
 
 == Changelog ==
 
+= 0.2 =
+* Fixed a conflict between the stats module on Jetpack. 
+
 = 0.1 =
 * First release - Nothing interesting to read here...
 
 == Upgrade Notice ==
+
+= 0.2 =
+* Fixed a conflict between the stats module in Jetpack. The JS from Jetpack was getting added to the plain text files, which it didn't need to. 
 
 = 0.1 =
 * First version, nothing to update
